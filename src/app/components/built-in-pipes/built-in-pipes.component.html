@@ -1,0 +1,12 @@
+<h3>Built-in Pipes:</h3>
+<p>Date: {{ today | date: 'dd/MM/yyyy' }}</p>
+<p>Title case: {{ 'hello world!' | titlecase }}</p>
+<p>Slice: {{ longText | slice:0:10 }}</p>
+<p>Decimal: {{ 12345.67890 | number: '1.0-0' }}</p>
+
+<h3>Async:</h3>
+<ul>
+  <li *ngFor="let author of listAuthor | async">
+    {{ author.name }}
+  </li>
+</ul>

@@ -1,0 +1,11 @@
+<div>
+    Input data: <input type="text" [(ngModel)]="inputData">
+    <hr>
+    <app-input-output-comp [data]="inputData" (returnData)="saveData($event)"></app-input-output-comp>
+    <hr>
+    Saved list:<br>
+    <ul>
+      <li *ngFor="let item of listData">{{item}}</li>
+    </ul>
+</div>
+  
