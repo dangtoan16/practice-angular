@@ -11,6 +11,7 @@ import { CurrentPipesComponent } from './components/current-pipes/current-pipes.
 import { Vd15HttpClientComponentComponent } from './components/vd15-http-client-component/vd15-http-client-component.component';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
+import { DomSanitizerComponent } from './components/dom-sanitizer/dom-sanitizer.component';
 
 
 export const routes: Routes = [
@@ -60,5 +61,9 @@ export const routes: Routes = [
         path:'reactive-forms',
         component:ReactiveFormsComponent
     },
+    {
+        path:'dom-sanitizer',
+        component:DomSanitizerComponent
+    }
 ];
 
